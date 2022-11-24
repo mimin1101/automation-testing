@@ -1,0 +1,30 @@
+{
+  "name": "automation-testing",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha --no-timeouts tests/*.test.js",
+    "blog": "mocha --no-timeouts tests/testBlogPage.test.js",
+    "mail": "mocha --no-timeouts tests/testSendMail.test.js",
+    "resume": "mocha --no-timeouts tests/testDownloadResume.test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mimin1101/automation-testing.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mimin1101/automation-testing/issues"
+  },
+  "homepage": "https://github.com/mimin1101/automation-testing#readme",
+  "dependencies": {
+    "chromedriver": "^107.0.3",
+    "selenium-webdriver": "^4.6.1"
+  },
+  "devDependencies": {
+    "chai": "^4.3.7",
+    "mocha": "^10.1.0"
+  }
+}
