@@ -1,7 +1,7 @@
 require('chromedriver')
 
-const{Builder, By, until} = require('selenium-webdriver');
-const{assert,expect}= require('chai');
+const{Builder, By} = require('selenium-webdriver');
+const{assert}= require('chai');
 
 describe('Test download function',function (){
     it('Test download resume',async function(){
@@ -26,7 +26,7 @@ describe('Test download function',function (){
             }
             const title = await driver.getCurrentUrl();
 
-            assert.equal(title,'https://namnguyen.io/Nguyen-Thanh-Hai-Nam.pdf')
+            assert.equal(title,'https://namnguyen.io/alex-nguyen.pdf')
         }finally {
             await driver.quit();
         }
